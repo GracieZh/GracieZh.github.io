@@ -589,15 +589,15 @@ footer{
     }
     .nav-link{
         font-size: 1.3rem;
-		color: black;
+	color: black;
     }
     .nav-link:hover{
         color: white;
         animation: grow 1s forwards;
-        border-bottom: 2px solid lightblue;
+        border-bottom: 2px solid white;
     }
     .nav-link .active {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
     }
     .active{
         position: relative;

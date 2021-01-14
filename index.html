@@ -1,30 +1,207 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<!-- ^ the viewport meta tag is to make your webpage responsive according to screen size -->
-	<title>Gracie Zhang</title>
-	<!-- ^ your webpage's title -->
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- ^ where we link our CSS file to our webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Gracie Zhang" />
+
+    <title>Gracie Zhang | Home</title>
+	<!-- icons source-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- scroll review effect source -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="dark">  <!-- body tag is what is displayed on webpage, contains all content -->
+<body>
+    <header>
+        <div class="container">
+            <nav class="">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
 
-<div>
-  <img src="profilePic.png">
-  <h1>Gracie Zhang</h1>
-  <h2>University of Waterloo</h2>
-  <h3>Software Developer</h3>
-  <!--h4>Check out the following links to learn more about me!</h4-->
-  <a href="https://github.com/GracieZh" target="_blank"> GitHub </a> <br>
-  <a href="https://www.instagram.com/imaginmagic.art/" target="_blank"> Digital Art on Instagram </a>
-</div>
+                </div>
+                <a href="index.html" class="logo"><img src="pictures/logo.png" alt="BP"
+                        style="width:5%;height:5%;margin-top:2.4rem;"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my-projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#social" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<script src="script.js"></script>
-	<!-- ^ where we link our JS file to our webpage (we don't need to worry about this for now!) -->
+    <section class="hello" id="hello">
+
+        <div class="container">
+            <h2 class="sub-headline">
+                Hi, I'm Gracie!
+            </h2>
+            <h1 class="headline"> an aspiring software developer</h1>
+            <div class="headline-description">
+                <div class="single-animation">
+                    <a href="#my-story" class="btn cta-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-story" id="my-story">
+        <div class="container">
+            <div class="info">
+                <div class="description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline-dark">
+                            Hello!
+                        </h2>
+						<br>
+                    </div>
+                    <p>It's nice to meet you! <br> My name is Gracie Zhang and I am an aspiring software
+                        developer and UI/UX Designer.<br><br>
+                        I'm currently located in Toronto, Ontario. In my spare time, I love to draw with Paint.net and 
+                        MediBang. Aside from art, I also play Among Us and Mobile Legends with my friends over the weekend.</p>
+					<a href="https://www.instagram.com/imaginmagic.art/" target="_blank" class="btn cta-btn">See My Art!</a>
+                </div>
+                <div class="info-img animate-right">
+                    <img src="pictures/art.jpg" alt="art">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-projects" id="my-projects">
+        <div class="container">
+            <div class="global-headline animate-bottom">
+                <h2 class="sub-headline-dark">
+                    My Projects
+                </h2>
+            </div>
+			<br>
+            <div class="projects">
+                <div class="content">
+                    <div class="row">
+
+                        <div class="column1 animate-left">
+                            <div class="item">
+                                <a href="https://devpost.com/software/garbage-grouper" target="_blank">
+                                    <img class="screenshot" src="pictures/whichbin.png" alt="Which Bin">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Which Bin?</b>
+                                            <br><br> A waste sorting game built at SheHacks 2021.
+                                            <br><br> <em>Tools: Java GUI, MediBang</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="column2 animate-bottom">
+                            <div class="item">
+                                <a href="https://github.com/GracieZh/ChordHacks" target="_blank">
+                                    <img class="screenshot" src="pictures/chordhacks.jpg" alt="ChordHacks">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>ChordHacks</b>
+                                            <br><br> An event that I planned for Conchordium but never happened.
+                                            <br><br> <em>Tools: HTML/CSS, JavaScript</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="column3 animate-right">
+                            <div class="item">
+                                <a href="https://github.com/GracieZh/Tic-tac-toe" target="_blank">
+                                    <img class="screenshot" src="pictures/ttt.png" alt="Bloomi">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Tic-Tac-Toe</b>
+                                            <br><br> A classic game of Tic Tac Toe <br> on a 3x3 grid!
+                                            <br><br> <em>Tools: Java, Android Studio</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                    
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="my-resume" id="resume">
+        <div class="container">
+            <div class="seeking">
+                <div class="resume padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline-dark">
+                            Looking for co-op opportunities!
+                        </h2>
+                    </div>
+					
+                    <p>Currently seeking 4 month co-op opportunities in software development, full stack, and mobile
+                        development. Available for remote positions or in-person within the GTA.</p>
+                    <div class="single-animation">
+                        <a href="mailto:gracie.zhang.email@gmail.com" target="_blank" class="btn cta-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="pdf-file animate-right">
+                    <iframe src="https://drive.google.com/file/d/18p8m6ffQLsqFcD84n5PKBkqE544-galX/preview" width="100%" height="500"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hello"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media" id="social">
+                        <h4>Let's Connect!</h4>
+                        <ul class="social-icons">
+                            <li><a href="https://github.com/GracieZh" target="_blank"><i
+                                        class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/gracey.zee/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="mailto:gracie.zhang.email@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; 2020 Made by Gracie Zhang
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+
 </body>
 
 </html>

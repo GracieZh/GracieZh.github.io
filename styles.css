@@ -544,7 +544,7 @@ footer{
     color:  var(--footer-focus);
 }
 
-.copyright{
+.foot-content{
     list-style: none;
     margin-top: 1rem;
     font-size: 1.25rem;

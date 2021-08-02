@@ -372,8 +372,9 @@ header{
     background-color: var(--color1);
 }
 .projects {
-	display:flex;
+	/*display:flex;*/
 	justify-content: center;
+	padding-left: 6%;
 }
 
 .content{
